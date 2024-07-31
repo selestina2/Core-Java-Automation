@@ -1,0 +1,29 @@
+package basics;
+//5. WAP on initialization and declaration of each datatype
+public class Datatype {
+	public static void main(String[] args) {
+		//declaration and initialization of a variable
+		byte a=10;
+		a=5;
+		System.out.println(a);
+		short b=9098;
+		System.out.println(b);
+		int c=986754;
+		c=76;
+		System.out.println(c);
+		long l=98765432;
+		System.out.println(l);
+		float f=4.65f;
+		System.out.println(f);
+		double d=4.16;
+		System.out.println(d);
+		char g='F';
+		System.out.println(g);
+		boolean h=false;
+		System.out.println(h);
+		String name="Selestina Behara";
+		System.out.println(name);
+		
+	}
+
+}
