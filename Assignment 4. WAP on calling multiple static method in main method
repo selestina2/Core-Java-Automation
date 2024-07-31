@@ -1,0 +1,33 @@
+package basics;
+// 4. Calling Multiple static methods from main method
+public class Assignment_1 {
+
+	static void class1()
+	{
+		System.out.println("First Static method");
+	}
+	static void class2()
+	{
+		System.out.println("Second Static method");
+	}
+	static void class3()
+	{
+		System.out.println("Third Static method");
+	}
+	static void class4()
+	{
+		System.out.println("Fourth Static method");
+	}
+	static void class5()
+	{
+		System.out.println("Fifth Static method");
+	}
+	public static void main(String[] args)
+	{
+		class1();
+		class2();
+		class3();
+		class4();
+		class5();
+	}
+}
