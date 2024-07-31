@@ -1,0 +1,9 @@
+package basics;
+//2.WAP for Printing your name
+public class FirstProgram
+{
+	  public static void main(String[] args)
+	  {
+		  System.out.println("Hello Selestina!");
+	  }
+}
