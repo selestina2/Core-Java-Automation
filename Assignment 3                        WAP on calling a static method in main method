@@ -1,0 +1,18 @@
+package basics;
+//3. Calling Static method in main method
+public class CallingStaticMethod {
+	static void first_method()
+	{
+		System.out.println("First method");
+		
+	}
+	static void second_method() 
+	{
+		System.out.println("Second Method");
+		}
+public static void main(String[] args) {
+	first_method();
+	System.out.println("Main Method");
+	second_method();
+}
+}
