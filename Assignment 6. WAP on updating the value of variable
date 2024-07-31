@@ -1,0 +1,11 @@
+package basics;
+//6.WAP for updating the value of variable
+public class Datatype2 {	
+	
+public static void main(String[] args) {
+	int c = 100;
+	c=5;
+	System.out.println(c);
+}
+}
+
