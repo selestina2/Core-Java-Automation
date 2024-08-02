@@ -1,0 +1,27 @@
+package basics;
+
+public class Assignment_8 {
+	// Class can have both static and non static method
+	static void sum() //static method
+	{
+		int a=3;
+		int b=5;
+		int c=a+b;
+		System.out.println(c);
+	}
+	 void sub() //Non-static method
+	{
+		int a=3;
+		int b=5;
+		int c=a-b;
+		System.out.println(c);
+	}
+	public static void main(String[] args) {
+		sum();
+		Assignment_8 n1=new Assignment_8();
+		n1.sub();
+		
+		
+	}
+
+}
