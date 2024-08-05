@@ -1,0 +1,72 @@
+package basics;
+
+public class Assignment_9 {
+	//Constructor 1
+	Assignment_9()
+	{
+		System.out.println("nonparametrized");
+	}
+	//Constructor 2
+	Assignment_9(int a)
+	{
+		System.out.println(a);
+	}
+	//Constructor 3
+	Assignment_9(float a)
+	{
+		System.out.println(a);
+	}
+	//static method 1
+	static void add() 
+	{
+		System.out.println("1st static Method");
+	}
+	//static method 2
+	static void add(int a,int b) 
+	{
+		int result=a+b;
+		System.out.println("2nd static Method: "+result);
+	}
+	//static method 3
+	static void sub(int a,int b) 
+	{
+		int result=a-b;
+		System.out.println("3rd static Method : "+result);
+	}
+	//Non-static method 1
+	void sub(float a,float b) 
+	{
+		float result=a-b;
+		System.out.println("1st Non-static Method : "+result);
+	}
+	
+	//Non-static method 2
+	void add(float a,float b) 
+	{
+		float result=a+b;
+		System.out.println("2nd non-static Method : "+result);
+	}
+	//Non-static method 3
+	void add(boolean a) 
+	{
+		System.out.println("3rd non-static Method : "+a);
+	}
+	public static void main(String[] args)
+	{
+		//calling for Constructors
+		new Assignment_9();
+		new Assignment_9(10);
+		new Assignment_9(776544f);
+		//Calling for StaticMethods
+		add();
+		add(3,5);
+		sub(8,5);
+		//Calling for Non-StaticMethods
+		Assignment_9 n1=new Assignment_9();// automatically n1 object call constructor
+		n1.add(45f,67f);
+		n1.sub(65f, 45f);
+		n1.add(false);
+		
+	}
+
+}
