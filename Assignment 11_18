@@ -1,0 +1,79 @@
+package Assignments;
+
+import java.util.Scanner;
+
+/*Assignment_11 Find the area of the circle.
+ Assignment_12 Area of Square.
+ Assignment_13 Area of Rectangle.
+ A_14 Area of triangle.
+ A_15 Area of Trapezium
+ A_16 Circumference of Trapezium
+ A_17 Circumference of Rectangle
+ A_18 Circumference of square ..Input must be given by User*/
+public class Assignment_11
+{
+	void Area_Circumference_Cirlce()
+	{
+		Scanner s1=new Scanner(System.in);
+		System.out.println("Please enter the radius of a Circle");
+		int r=s1.nextInt();
+		double area=3.14*r*r;
+		double circumference=2*3.14*r;
+		System.out.println("Area of the Circle:->"+ area);
+		System.out.println("Circumference of the Circle:->"+ circumference);
+	}
+	void Area_Circumference_Rectangle()
+	{
+		Scanner s1=new Scanner(System.in);
+		System.out.println("Please enter the Length of a Rectangle");
+		double l=s1.nextDouble();
+		System.out.println("Please enter the Breadth of a Rectangle");
+		double b=s1.nextDouble();
+		double area=l*b;
+		double circumference=2*(l+b);
+		System.out.println("Area of the Rectangle:->"+ area);
+		System.out.println("Circumference of the Rectangle:->"+ circumference);
+	}
+	void Area_Circumference_Square()
+	{
+		Scanner s1=new Scanner(System.in);
+		System.out.println("Please enter the Length of a Square");
+		double a=s1.nextDouble();
+		double area=a*a;
+		double circumference=4*a;
+		System.out.println("Area of the Square:->"+ area);
+		System.out.println("Circumference of the Square:->"+ circumference);
+	}
+	void Area_Triangle()
+	{
+		Scanner s1=new Scanner(System.in);
+		System.out.println("Please enter height of Triangle");
+		double h=s1.nextDouble();
+		System.out.println("Please enter base of Triangle");
+		double b=s1.nextDouble();
+		double area=0.5*h*b;
+		System.out.println("Area of the Triangle:->"+ area);
+	}
+	void Area_Trapezium()
+	{
+		Scanner s1=new Scanner(System.in);
+		System.out.println("Please enter first base of Trapezium");
+		double a=s1.nextDouble();
+		System.out.println("Please enter second base of Trapezium");
+		double b=s1.nextDouble();
+		System.out.println("Please enter height of Trapezium");
+		double h=s1.nextDouble();
+		double area=0.5*(a+b)*h;
+		System.out.println("Area of the Trapezium:->"+ area);
+	}
+public static void main(String[] args) 
+{
+	Assignment_11 a1=new Assignment_11();
+	a1.Area_Circumference_Cirlce();
+	a1.Area_Circumference_Rectangle();
+	a1.Area_Circumference_Square();
+	a1.Area_Triangle();
+	a1.Area_Trapezium();
+	
+}
+}
