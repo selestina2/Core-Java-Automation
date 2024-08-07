@@ -1,0 +1,20 @@
+package Assignments;
+
+import java.util.Scanner;
+
+//Assignment_20: Use nextByte(), Give value as 32000, what exception
+public class Assignment_20 
+{
+	public static void main(String[] args)
+	{
+		Scanner s1=new Scanner(System.in);
+		System.out.println("Enter 320000");
+		byte b=s1.nextByte();
+		
+	}
+/*Output:Exception in thread "main" java.util.InputMismatchException: Value out of range. Value:"320000" Radix:10
+	at java.base/java.util.Scanner.nextByte(Scanner.java:2034)
+	at java.base/java.util.Scanner.nextByte(Scanner.java:1982)
+	at Java_Learning/Assignments.Assignment_20.main(Assignment_20.java:12)*/
+
+}
