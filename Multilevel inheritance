@@ -1,0 +1,55 @@
+21. Calling Multilevel inheritance in a different class and
+single Package
+package Assignments;
+public class Assinment21_ParentClass {
+void Amazon() {
+System.out.println("Parent Class Amazon method");
+}
+}
+package Assignments;
+public class Assignment21_ParentClass2 extends
+Assinment21_ParentClass {
+void FlipKart() {System.out.println("Flipkart Method of
+Parent2");}
+}
+package Assignments;
+public class Assignment21_Childclass extends
+Assignment21_ParentClass2{
+public static void main(String[] args) {
+Assignment21_Childclass v1=new
+Assignment21_Childclass();
+v1.Amazon();
+v1.FlipKart();
+}
+}
+}
+Calling Multilevel inheritance in a same class and single
+Package
+package Assignments;
+class Parent1
+{
+void Flipkart()
+{
+System.out.println("FlipKart");
+}
+}
+class Parent2 extends Parent1
+{
+void Blinkit()
+{
+System.out.println("BlinkIT");
+}
+}
+public class Assignment_21 extends Parent2{
+void Amazon()
+{
+System.out.println("Amazon");
+}
+public static void main(String[] args) {
+Assignment_21 a1=new Assignment_21();
+// a1.Blinkit();
+a1.Flipkart();//Calls Parent1 Super Class
+a1.Blinkit();// calls Super class
+a1.Amazon();//Calls Base Class
+}
+}
