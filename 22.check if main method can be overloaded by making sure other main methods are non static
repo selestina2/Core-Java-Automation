@@ -1,0 +1,24 @@
+package Assignments;
+//22. check if main method can be overloaded by making sure other main methods are non static
+public class Assignment22 {
+	public static void main(int a) 
+	{
+		System.out.println(a);
+	}
+	public static void main(String s) // overload main() with String Parameter
+	{
+		System.out.println(s);
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("Original Main Method");
+	}
+	public  void main(String[] args) //Couldnot Possible. nonstatic Method,
+	{
+		System.out.println("non static Main Method");
+	}
+	public  void main(char s) //Couldnot Possible. nonstatic Method,
+	{
+		System.out.println("non static Main Method with Char ");
+	}
+}
